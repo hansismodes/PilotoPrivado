@@ -152,10 +152,34 @@
 
         .module-title { font-family: 'Outfit', sans-serif; font-size: 1.75rem; color: var(--color-navy-dark); font-weight: 700; line-height: 1.2; }
 
-        .technical-text { color: var(--text-secondary); font-size: 0.975rem; line-height: 1.75; }
-        .technical-text p { margin-bottom: 1.25rem; }
-        .technical-text ul { padding-left: 1.4rem; margin-bottom: 1.25rem; }
-        .technical-text li { margin-bottom: 0.65rem; line-height: 1.65; }
+        .technical-text h4 {
+            margin-top: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-navy-medium);
+        }
+
+        .technical-text { color: var(--text-secondary); font-size: 0.975rem; line-height: 1.7; }
+        .technical-text p { margin-bottom: 0.85rem; }
+
+        .technical-text ul,
+        .technical-text ol {
+            padding-left: 1.65rem;
+            margin-bottom: 1rem;
+        }
+
+        .technical-text ul ul,
+        .technical-text ol ol,
+        .technical-text ul ol,
+        .technical-text ol ul {
+            padding-left: 1.35rem;
+            margin-top: 0.35rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .technical-text li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
 
         .technical-formula {
             background: var(--bg-secondary); border-left: 4px solid var(--color-aviation-blue);
@@ -328,51 +352,244 @@
                 subtitle: "CONCEPTOS INICIALES",
                 indicator: "Módulo 1: Principios de Vuelo",
                 instructorText: `
-                    <h3>1. Fundamentos Físicos del Vuelo</h3>
-                    <p><strong>Introducción:</strong> Este módulo examina las leyes físicas que rigen las fuerzas que actúan sobre una aeronave. Piensa en el avión como un cuerpo que "nada" en el aire, igual que un pez en el agua.</p>
+                    <h3>INTRODUCCIÓN</h3>
+                    <p>Este curso examina las leyes físicas fundamentales que rigen las fuerzas que actúan sobre una aeronave en vuelo, y el efecto que estas leyes naturales y las fuerzas tienen sobre la performance de las aeronaves.</p>
+
+                    <h3>ENERGÍA</h3>
+                    <p>Es la capacidad para realizar un trabajo. Puede existir en varias formas y se puede convertir de una forma a otra. (Energía potencial y energía cinética). Si una bola se colocara en el borde de un tobogán, este contendría cierta energía potencial (energía de posición). Esta energía potencial se convertirá en energía cinética (energía de movimiento) cuando la bola ruede hacia abajo. Átomos y moléculas producen energía cinética porque están en constante movimiento.</p>
+
+                    <h3>PRESIÓN</h3>
+                    <p>Es la relación que existe entre la fuerza aplicada y un área. A mayor área, menor presión y viceversa.</p>
+
+                    <h3>GRAVEDAD</h3>
+                    <p>La gravedad es una fuerza de atracción que la Tierra ejerce sobre todo objeto con masa, y siempre tira hacia el centro del planeta. El valor promedio de la Gravedad cerca del suelo es: g=9.81m/s². Si estás sentado en el avión, quieto en tierra, tu cuerpo siente tu peso. Esa fuerza la ejerce la Tierra sobre ti, y el asiento ejerce una fuerza igual y opuesta para sostenerte. No te hundes porque ambas se equilibran.</p>
+
+                    <h3>PESO</h3>
+                    <p>W = m ⋅ g<br>
+                    W: Weight (Peso)<br>
+                    m: Mass (Masa)<br>
+                    g: Gravitational acceleration (Aceleración de la gravedad).<br>
+                    Por ejemplo, si pesas 80 kg: W = 80kg × 9.81m/s² = 784.8N.</p>
+
+                    <h3>DENSIDAD</h3>
+                    <p>Es la cantidad de materia por unidad de volumen. Es decir, que tanta masa hay en un volumen determinado.</p>
+
+                    <h3>PRESIÓN ATMOSFÉRICA</h3>
+                    <p>El aire es muy ligero, pero tiene masa y se ve afectada por la atracción de la gravedad. Por lo tanto, al igual que cualquier otra sustancia, tiene peso, y debido a su peso, tiene fuerza. La atmósfera estándar a nivel del mar tiene una temperatura de 15°C y una presión en la superficie de 29,92 pulgadas de mercurio ("Hg), o 1.013,2 mb. Con una variación vertical (gradiente) de temperatura estándar, esta disminuye a razón de aproximadamente 2°C por cada mil pies hasta 36.000 pies, donde está aproximadamente a -55°C. Por encima de este punto, la temperatura se considera constante hasta 80.000 pies. Con un gradiente de presión estándar, esta disminuye a un ritmo de aproximadamente 1 "Hg o 30 mb por cada 1.000 pies que se gana de altitud hasta 10.000 pies.</p>
+
+                    <h3>PRESIÓN ESTÁTICA Y DINÁMICA</h3>
+                    <p>La presión estática se debe al peso de la atmósfera que presiona hacia abajo sobre el aire que se encuentra debajo, por lo que un cuerpo inmerso en la atmósfera experimentará una presión igual en todas las direcciones debido a la presión estática. La presión dinámica es la presión causada por el movimiento del aire en contra de un cuerpo o por el movimiento del cuerpo a través de aire.</p>
+
+                    <h3>PRESIÓN TOTAL</h3>
+                    <p>Las fuerzas que experimenta el avión son una combinación de presión estática y presión dinámica, si el avión esta estacionado, este experimentara solo presión estática. Tan pronto cómo el avión empiece a moverse a través del aire, la presión dinámica incrementara y la presión estática disminuirá para que la presión total que es la suma de ambas permanezca constante.</p>
+
+                    <h3>PROPIEDADES DEL AIRE</h3>
+                    <p>El aire tiene masa. Una masa de aire en movimiento tiene una energía cinética considerable; por ejemplo: al moverse a 100 nudos, la energía cinética del aire puede infligir graves daños a objetos.</p>
+
+                    <h3>FRICCIÓN</h3>
+                    <p>Cuando un fluido fluye alrededor o sobre un objeto, se produce fricción. La fricción es la resistencia que aparece cuando dos superficies están en contacto y existe movimiento relativo entre ellas. Esta fricción existe entre cualquier par de materiales que estén en contacto entre sí.</p>
+
+                    <h3>EFECTO MAGNUS</h3>
+                    <p>En 1852, el físico y químico alemán Heinrich Gustav Magnus (1802-1870), hizo estudios experimentales de las fuerzas aerodinámicas en esferas y cilindros giratorios. Estos experimentos condujeron al descubrimiento del efecto Magnus, que ayuda a explicar la teoría de la sustentación. Si el aire fluye en contra de un cilindro que no esta girando, el flujo de aire por encima y por debajo del cilindro es idéntico y las fuerzas son iguales. La rotación del cilindro afecta el fluido que lo rodea. El flujo alrededor del cilindro giratorio difiere del flujo alrededor de un cilindro estático debido a la resistencia causada por la viscosidad y fricción. Cuando el cilindro rota en un fluido que también se esta moviendo, el resultado es un mayor flujo circulatorio en la dirección del cilindro giratorio. Agregando movimiento al fluido, la magnitud del flujo aumenta.</p>
+                    <p>En un perfil aerodinámico: en el punto “A”, existe un punto de estancamiento donde la corriente de aire impacta en la parte frontal del perfil dividiéndose; parte del aire pasa por encima y parte por debajo. Otro punto de estancamiento ocurre en el punto “B”, donde las dos corrientes de aire vuelven a juntarse y retoman velocidades idénticas. La velocidad máxima se encuentra en la parte superior del perfil, con la menor velocidad en la parte inferior. Esto resulta en una mayor presión en la parte inferior del ala y una menor presión en la parte superior del ala. Esta área de baja presión produce una fuerza ascendente conocida como el efecto Magnus. Un perfil con un ángulo de ataque positivo desarrolla una circulación del aire sobre la superficie superior del ala.</p>
+
+                    <h3>PARTES DEL AVIÓN Y FUSELAJE</h3>
+                    <p>El fuselaje es el cuerpo central de un avión y está diseñado para dar cabida a la tripulación, pasajeros y carga. También proporciona la conexión estructural de las alas y el empenaje de cola. Los tipos de diseño más antiguos utilizan una estructura reticular (o tubular) construida de madera, acero o aluminio. Los tipos de estructuras de fuselaje utilizado en los aviones de hoy son el monocasco y semimonocasco.</p>
+
+                    <h3>ALAS</h3>
+                    <p>Las alas son perfiles aerodinámicos unidos a cada lado del fuselaje y son las principales superficies sustentadoras que mantienen al avión en vuelo. Existen numerosos diseños de alas, tamaños y formas utilizadas por los distintos fabricantes. Cada uno responde a una necesidad determinada por el desempeño esperado para un avión en particular.</p>
+
+                    <h3>TREN DE ATERRIZAJE</h3>
+                    <p>Es el principal apoyo del avión cuando esta estacionado, en rodaje, despegando y aterrizando. Se compone de tres ruedas: dos ruedas principales y una tercera rueda en posición delantera (tren triciclo) o trasera del avión (tren convencional). El tren de aterrizaje puede ser fijo o puede ser retráctil.</p>
+
+                    <h3>EL GRUPO MOTOPROPULSOR</h3>
+                    <p>Por lo general incluye el motor y la hélice. La función principal del motor es proporcionar la energía para hacer girar la hélice. También genera energía eléctrica, proporciona vacío para algunos instrumentos de vuelo, y en la mayoría de aviones monomotores, proporciona una fuente de calor para el piloto y los pasajeros. El motor está cubierto por un carenado o capot; el propósito de la cubierta es mejorar el flujo de aire alrededor del motor y así ayudar a enfriar el motor conduciendo el aire alrededor de los cilindros. La hélice, montada en la parte delantera del motor, convierte la fuerza de rotación del motor en empuje, una fuerza de avance que ayuda a mover el avión.</p>
+
+                    <h3>LEYES DE NEWTON</h3>
                     <ul>
-                        <li><strong>Energía:</strong> Capacidad para realizar trabajo. <strong>Potencial</strong> (posición) y <strong>Cinética</strong> (movimiento). Analogía: Una bola en lo alto de un tobogán tiene energía potencial; al bajar, se convierte en cinética.</li>
-                        <li><strong>Presión:</strong> Fuerza por unidad de área (P = F/A). A mayor velocidad del aire → menor presión (Principio de Bernoulli).</li>
-                        <li><strong>Gravedad y Peso:</strong> Fuerza que tira hacia el centro de la Tierra. El peso actúa siempre verticalmente hacia abajo a través del centro de gravedad.</li>
+                        <li><strong>Primera Ley (Inercia):</strong> Para mover un objeto estacionario o hacer que un objeto en movimiento cambie su dirección, una fuerza debe ser aplicada.</li>
+                        <li><strong>Segunda Ley:</strong> “La aceleración de un cuerpo desde un estado de reposo, o movimiento uniforme en una línea recta, es proporcional a la fuerza aplicada e inversamente proporcional a la masa”. Para la misma masa; cuanto mayor sea la fuerza, mayor será la aceleración. Para la misma fuerza; cuanto mayor sea la masa, más lenta será la aceleración.</li>
+                        <li><strong>Tercera Ley:</strong> Establece que para cada acción hay una reacción igual y opuesta. Si una fuerza acelera una masa en una dirección, el cuerpo que suministra la fuerza estará sujeto a la misma fuerza en la dirección opuesta.</li>
                     </ul>
 
-                    <h3>2. La Atmósfera y Dinámica de Presiones</h3>
+                    <h3>FUERZAS ACTUANDO EN UN AVIÓN</h3>
+                    <p>Como todos los objetos, el avión tiene peso, que es la fuerza de gravedad actuando sobre la masa de un cuerpo, que actúa a través del centro del avión en dirección vertical hacia el centro de la tierra. En vuelo recto y nivelado, la resistencia es neutralizada por el empuje. Las fuerzas son iguales y opuestas, cancelándose entre ellas, entonces el resultado de las fuerzas OPUESTAS actuantes en el avión es cero. En esta situación el avión se encuentra en equilibrio. La suma de todas las fuerzas hacia arriba es igual a la suma de todas las fuerzas hacia abajo. La suma de todas las fuerzas hacia adelante es igual a la suma de todas las fuerzas hacia atrás.</p>
+
+                    <h3>SUSTENTACIÓN</h3>
+                    <p>Para lograr el vuelo en una máquina que es más pesada que el aire, hay varios obstáculos que debemos superar. Unos de esos obstáculos son la resistencia y el más difícil de superar en la aviación, la fuerza de la gravedad. Un ala en movimiento a través del aire genera la fuerza llamada sustentación. La generación de esta fuerza se basa en algunos principios importantes, las leyes básicas del movimiento de Newton, y el principio de presión diferencial de Bernoulli. La sustentación es la fuerza que que permite que un avión se mantenga en el aire; se opone a la fuerza del peso, se produce por el efecto dinámico del aire que actúa sobre el perfil aerodinámico, y actúa en forma perpendicular a la trayectoria de vuelo.</p>
+
+                    <h3>LEY DE LA CONTINUIDAD</h3>
+                    <p>Una de las leyes fundamentales del universo dice que la ENERGÍA y la MASA no se pueden crear o destruir, solo se pueden transformar. Debido a que el flujo de masa debe permanecer constante, se puede ver que la reducción en el área de la sección transversal de un tubo resulta en un aumento de la velocidad.</p>
+
+                    <h3>DIFERENCIAL DE PRESIONES</h3>
+                    <p>En la parte inferior de una placa el aire no puede seguir recto porque la placa esta en medio de su trayectoria. El aire debe amoldarse para rodear la placa, al hacerlo aparece la gradiente de presiones. Esto quiere decir que en la parte inferior de la placa la presión es mayor y en la parte superior la presión es menor. En la parte inferior, como el aire tiene menos espacio se va a comprimir, por lo que la presión incrementará.</p>
+
+                    <h3>STREAMLINES</h3>
+                    <p>Las líneas de flujo de aire (streamlines) es el camino trazado por las partículas de aire en un flujo continuo, y estas líneas de flujo no se pueden cruzar entre ellas. Cuando las streamlines se muestran juntas se puede ilustrar un incremento en la velocidad. Streamlines convergentes ilustran una aceleración del flujo de aire, resultando en un reducción de presión. El streamtube es un tubo imaginario hecho de streamlines.</p>
+
+                    <h3>TEORÍA SEGÚN LA NASA</h3>
+                    <p>La sustentación es una fuerza. Por segunda ley de Newton sabemos que una fuerza es producida cuando una masa es acelerada. Y aceleración es un cambio en velocidad en un tiempo. Lo importante es que una fuerza provoca un cambio en la velocidad; y, del mismo modo, un cambio en la velocidad genera una fuerza. La velocidad tiene dos características una magnitud, (llamada también rapidez), y una dirección. Por lo tanto, para cambiar la rapidez o la dirección de un flujo, es necesario aplicar una fuerza. Y si se modifica la rapidez o la dirección de un flujo, se genera una fuerza.</p>
+                    <p>Un perfil es construido de tal forma que se aproveche la respuesta del aire a leyes físicas. Esto desarrolla dos acciones: una diferencia de presiones, mayor presión en la parte inferior del ala y menor presión en la parte superior del perfil alar. Y al mismo tiempo el aire circulando por el perfil alar sigue la trayectoria curva desde el borde de ataque hasta el borde de salida, generando deflexión del flujo de aire hacia abajo (downwash) que por tercera ley de Newton, acción reacción, nos genera una fuerza hacia arriba.</p>
+
+                    <h3>CENTRO DE PRESIÓN (CP)</h3>
+                    <p>Toda la superficie del perfil aerodinámico contribuye a la generación de sustentación, pero el punto a lo largo de la cuerda donde se concentra de manera efectiva la sustentación es llamada centro de presiones. La ubicación del centro de presiones varía con el ángulo de ataque; el CP se mueve hacia adelante a medida que incrementa el ángulo de ataque.</p>
+
+                    <h3>COEFICIENTE DE SUSTENTACIÓN (C<sub>L</sub>)</h3>
+                    <p>Un coeficiente es un número adimensional que expresa grados de magnitud. Por definición el coeficiente de sustentación (C<sub>L</sub>) es la proporción entre la sustentación dividida por unidad de área. El C<sub>L</sub> nos indica la eficiencia del perfil alar en la generación de sustentación a diferentes ángulos de ataque. Incrementa con el ángulo de ataque hasta alcanzar su valor máximo (C<sub>LMAX</sub>), que corresponde al ángulo de ataque critico. Pasando este punto el perfil es incapaz de generar sustentación; a este fenómeno se le conoce como perdida de sustentación (Stall).</p>
+                    <p><strong>Fórmula de fuerza de sustentación:</strong> Lift = ½ ρ ⋅ V² ⋅ S ⋅ C<sub>L</sub></p>
+
+                    <h3>RESISTENCIA</h3>
+                    <p>Es la fuerza que se resiste al movimiento del avión a través del aire y actúa paralela al viento relativo. Todas las partes expuestas al flujo de aire generan resistencia. La resistencia total tiene dos subtipos: resistencia parásita e inducida.</p>
                     <ul>
-                        <li><strong>Atmósfera Estándar (ISA):</strong> 15°C y 29.92 "Hg al nivel del mar. La temperatura baja ≈ 2°C por cada 1.000 pies de ascenso.</li>
-                        <li><strong>Presión Estática:</strong> Presión del peso de la atmósfera (la que mide el altímetro).</li>
-                        <li><strong>Presión Dinámica:</strong> Presión causada por el movimiento del aire contra el avión.</li>
-                        <li><strong>Presión Total:</strong> Suma de estática + dinámica. Se mantiene constante en vuelo recto y nivelado.</li>
+                        <li><strong>Resistencia Parásita:</strong> se subdivide en resistencia de fricción, resistencia de forma (presión) y resistencia de interferencia. Fricción y forma juntas son conocidas cómo resistencia de perfil.
+                            <ul>
+                                <li><strong>Resistencia de fricción:</strong> la fuerza de fricción entre un objeto y el aire por el que se mueve produce resistencia de fricción. Mientras mas rugosa sea la superficie del avión, mas resistencia; a mayor velocidad incrementa la resistencia de fricción.</li>
+                                <li><strong>Resistencia de forma:</strong> es generada por el paso del flujo de aire alrededor del avión cuando el flujo se separa por la forma del mismo, formando aire turbulento que incrementa la resistencia.</li>
+                                <li><strong>Resistencia de interferencia:</strong> es la resistencia causada por la mezcla o interferencia de flujos de aire de distintas direcciones, como la sección que une las alas con el fuselaje.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Resistencia Inducida:</strong> es generado siempre que el avión este generando sustentación. La diferencia de presiones entre el intradós y el extradós hace que el flujo se desplace hacia la zona de baja presión ocasionando la generación de vórtices. A menor velocidad, mayor ángulo de ataque; vórtices mas fuertes significan mas resistencia inducida.</li>
                     </ul>
 
-                    <h3>3. Generación de Sustentación (Lift)</h3>
-                    <p>La sustentación se genera por dos mecanismos combinados:</p>
-                    <ul>
-                        <li><strong>Efecto Bernoulli:</strong> El aire viaja más rápido por la parte superior del ala (extradós) → menor presión → "succión" hacia arriba.</li>
-                        <li><strong>3ª Ley de Newton (Downwash):</strong> El ala deflecta el aire hacia abajo. Por reacción, el aire empuja el ala hacia arriba.</li>
-                    </ul>
-                    <div class="technical-formula">
-                        <div class="formula-title">Ecuación Fundamental de la Sustentación</div>
-                        <div class="formula-content">Lift = ½ · ρ · V² · S · C<sub>L</sub></div>
-                    </div>
-                    <p>ρ = densidad del aire | V = velocidad | S = superficie alar | C<sub>L</sub> = coeficiente de sustentación</p>
+                    <h3>RESISTENCIA TOTAL</h3>
+                    <p>Es la suma de todas las resistencias, es decir resistencia parásita y resistencia inducida. La resistencia parásita incrementa con la velocidad y la resistencia inducida disminuye con la velocidad. La resistencia total es menor en el punto donde ambas resistencias se juntan. Muchos aspectos de la performance del avión están relacionadas a esta velocidad donde se produce la menor resistencia.</p>
 
-                    <h3>4. Las Cuatro Fuerzas en Vuelo Recto y Nivelado</h3>
-                    <p>En vuelo recto y nivelado a velocidad constante las cuatro fuerzas están en equilibrio:</p>
+                    <h3>EFECTO SUELO</h3>
+                    <p>El efecto suelo se produce debido la interferencia de la superficie de la tierra (o agua) a los patrones de flujo de aire alrededor de la aeronave en vuelo. Cuando aterrizamos y despegamos, la cercanía con el suelo evita el total desarrollo de los vortices, haciéndolos mas débiles, por lo tanto menor resistencia inducida.</p>
+
+                    <h4>EFECTO SUELO DURANTE EL ATERRIZAJE</h4>
+                    <p>A medida que el avión entra en el efecto suelo a una distancia equivalente a la envergadura del avión, el piloto experimentará una sensación flotante, debido a un incremento de sustentación y la desaceleración más lenta (debido a una menor resistencia). Por lo tanto es importante realizar correctamente el flare y utilizar la potencia en ralentí, por la reducción de resistencia.</p>
+
+                    <h4>EFECTO SUELO EN EL DESPEGUE</h4>
+                    <p>A medida que el avión se aleja del suelo, la capacidad de sustentación del ala disminuirá además, la resistencia inducida aumentará debido a los mayores vórtices de la punta del ala. Así que el avión no funcionará tan bien en aire libre como en efecto suelo. Fuera del efecto del suelo, necesitarás un aumento en el ángulo de ataque para generar la misma sustentación que dentro del efecto del suelo, y aumentar el empuje para superar la resistencia adicional inducida o aceptar una reducción de performance.</p>
+
+                    <h3>RELACIÓN SUSTENTACION/RESISTENCIA</h3>
+                    <p>La curva de sustentación muestra un incremento en el coeficiente de sustentación a medida que el ángulo de ataque incrementa hasta alcanzar la perdida de sustentación. La curva de resistencia muestra cómo la resistencia es menor a bajos ángulos de ataque e incrementa si el ángulo de ataque también lo hace.</p>
+
+                    <h3>L/D MAX</h3>
+                    <p>Si apreciamos la eficiencia de producción de sustentación estudiando la relación existente entre la sustentación y resistencia (L/D), vemos que los coeficientes de sustentacion y resistencia pueden ser calculados juntos para cada ángulo de ataque. El L/D incrementa a medida que incrementamos el ángulo de ataque hasta alcanzar el valor máximo llamado L/D MAX que seria el ángulo optimo. Luego el L/D disminuye a medida que seguimos incrementando el ángulo de ataque hasta alcanzar el CLMAX.</p>
+                    <p>Todas las velocidades, incluyendo la velocidad de planeo, las podemos encontrar en el Pilot’s Operating Handbook (POH) u Owner’s Manual (OM).</p>
+
+                    <h3>PESO / FUERZA GRAVITACIONAL</h3>
+                    <p>La gravedad es la fuerza de tracción que tiene a atraer todos los cuerpos hacia el centro de la tierra. El CG (Center of gravity) puede ser considerado como el punto en la que todo el peso de la aeronave se concentra. Si la aeronave se apoya en su exacto CG, estaría en equilibrio en cualquier posición. Cabe señalar que el CG es de gran importancia en un avión porque su posición tiene una gran importancia en la estabilidad.</p>
+
+                    <h3>EMPUJE</h3>
+                    <p>Para que un avión se mueva, se debe ejercer un empuje y ser mayor que la resistencia. El avión seguirá avanzando y ganando velocidad hasta que el empuje y la resistencia sean iguales. Si en vuelo recto y nivelado, la potencia del motor se reduce, se reduce el empuje y el avión se desacelera. Mientras el empuje sea menor que la resistencia, el avión continúa desacelerándose hasta que su velocidad no es suficiente para mantenerlo en el aire.</p>
+                    <p>Un motor de pistón utiliza la hélice para convertir la potencia del motor en empuje. La hélice son perfiles aerodinámicos que generan fuerzas aerodinámicas de manera similar a otros perfiles, como las alas, modificando el flujo de aire alrededor de el. A medida que la hélice rota, la aceleración del flujo de aire sobre la parte curva de la superficie de la pala causa una reducción en la presión estática por delante de la pala (Principio de Bernouilli). El resultado es una fuerza de empuje hacia adelante de la hélice.</p>
+
+                    <h3>LAS TENDENCIAS DE GIRO A LA IZQUIERDA</h3>
+                    <p>Existen cuatro elementos que causan o producen un movimiento de giro o rotación alrededor de al menos uno de los tres ejes del avión. Estos cuatro elementos son:</p>
+                    <ol>
+                        <li>Reacción del torque</li>
+                        <li>Efecto tirabuzón</li>
+                        <li>Efecto giroscópico</li>
+                        <li>Factor P.</li>
+                    </ol>
+
+                    <h4>TORQUE</h4>
+                    <p>La reacción del torque involucra la tercera ley de Newton de la física, para cada acción hay una reacción igual y opuesta. Aplicada a la aeronave, significa que cómo las partes internas del motor y la hélice están girando en una dirección, una fuerza igual esta tratando de hacer girar el avión en la dirección opuesta.</p>
+
+                    <h4>EFECTO TIRABUZÓN</h4>
+                    <p>La alta velocidad de rotación de la hélice de un avión da a la estela una rotación en tirabuzón o espiral. A alta velocidad de la hélice y baja velocidad hacia adelante (cómo en los despegues), esta rotación en espiral es muy compacta y ejerce una fuerza lateral en la superficie vertical de la cola de la aeronave. Algunos aviones tienen el estabilizador vertical ligeramente desplazado para ayudar a disminuir este efecto. Es mas notable con alta potencia y baja velocidad.</p>
+
+                    <h4>EFECTO GIRÓSCOPO</h4>
+                    <p>Un giroscopio tiene dos propiedades fundamentales: Rigidez en el espacio y la precesión. En este efecto nos interesa entender la precesión. La precesión es la acción resultante, o deflexión, de un rotor que gira cuando se aplica a su borde una fuerza desviadora. Cuando una fuerza es aplicada, la fuerza resultante produce efecto a 90 grados por delante y en el sentido del giro.</p>
+                    <p>La hélice de un avión es un giroscopio muy bueno y por lo tanto tiene propiedades similares. Durante el despegue, la fuerza del motor genera un movimiento de cabeceo hacia abajo, este cambio de actitud en cabeceo tiene el mismo efecto que aplicar una fuerza en la parte superior del plano de rotación de la hélice. La fuerza resultante que actúa a 90 grados por delante produce un momento de giro a la izquierda alrededor del eje vertical.</p>
+
+                    <h3>ÁNGULO DE INCIDENCIA</h3>
+                    <p>El ángulo agudo formado entre la cuerda de un perfil aerodinámico y el eje longitudinal de la aeronave en la que está montado.</p>
+
+                    <h3>CONTROLES DE VUELO PRIMARIOS</h3>
+                    <p>Los alerones, el elevador o timón de profundidad y el timón de dirección constituyen el sistema de control primario y están obligados a controlar un avión con seguridad durante el vuelo.</p>
+
+                    <h3>FLAPS</h3>
+                    <p>Son los dispositivos hipersustentadores más comunes utilizados en los aviones. Estas superficies están unidas al borde de salida del ala (la gran mayoría). Los flaps permiten que el ala de un avión cambie de forma durante el vuelo, lo que permite a los pilotos optimizarlos para cada fase: despegue, ascenso, crucero, aproximación y aterrizaje. Los flaps se pueden accionar tanto mecánicamente como eléctricamente.</p>
+
+                    <h3>DISPOSITIVOS DE BORDE DE ATAQUE SLATS Y SLOTS</h3>
+                    <p>Son también dispositivos hipersustentadores, se extienden desde el borde de ataque del ala. Los slats son móviles y los slots son fijos.</p>
+
+                    <h3>INSTRUMENTOS DE VUELO</h3>
+                    <p><strong>VELOCÍMETRO:</strong> El velocímetro o anemómetro nos indica la velocidad del aire que fluye a través del avión.</p>
+                    <p><strong>HORIZONTE ARTIFICIAL:</strong> Nos brinda la indicación de los cambios de actitud del avión, con un avión miniatura y un horizonte referencial que tiene la misma relación al avión real con el horizonte actual.</p>
+                    <p><strong>ALTIMETRO:</strong> Es un instrumento que mide la altura del avión sobre un nivel de presión especifico. Ya que la presión va cambiando con la altura podemos utilizar la presión como referencia para conocer nuestra altitud/altura.</p>
+
+                    <h3>PÉRDIDA DE SUSTENTACIÓN (STALL)</h3>
+                    <p>La pérdida de sustentación es la incapacidad del perfil alar de seguir generando la sustentación suficiente para mantener el vuelo. Un avión experimenta la pérdida de sustentación como resultado de una separación del flujo de aire de la superficie alar debido a un exceso de ángulo de ataque (pasando el ángulo de ataque crítico/CL-MAX). La pérdida de sustentación puede ocurrir a cualquier actitud o velocidad.</p>
+
+                    <h4>RECUPERACIÓN DE LA PÉRDIDA</h4>
+                    <p>Para recuperarse de la perdida, debemos reducir el ángulo de ataque. Esto se logra liberando la presión de los controles de vuelo de tal manera la nariz del avión ira hacia abajo. Si la velocidad es baja, en algunos casos es necesario también aplicar potencia para incrementar velocidad lo mas pronto posible. Una vez tengamos la velocidad adecuada, podemos nivelar el avión.</p>
+                    <p>Factores que afectan la velocidad de pérdida: Sustentación producida por el perfil. Factor carga. Banqueo. Peso. Potencia. Configuración de flaps (que cambian la forma y capacidad de generar sustentación).</p>
+
+                    <h3>ENTRADA EN BARRENA (SPIN)</h3>
+                    <p>La barrena es una condición de perdida de sustentación en la que el avión realiza un patrón espiral descendente porque un ala genera mas sustentación que la otra, el ala que cae es la que menos sustentación genera y la mayor resistencia de esa ala resulta en una mayor guiñada, mayor alabeo, y la auto rotación se desarrolla, provocando pérdida de altitud severa.</p>
+
+                    <h4>RECUPERACIÓN DE LA BARRENA</h4>
+                    <p>Para recuperarse de la barrena, debemos: Reducir potencia a ralentí, Neutralizar controles, Ver la dirección del espiral y aplicar pedal contrario, Una vez detenido el giro en espiral y con velocidad suficiente mover los controles gradualmente a una posición de recto y nivelado.</p>
+
+                    <h3>VIRAJES</h3>
+                    <p>Para que un objeto como el avión gire, requiere que una fuerza sea aplicada hacia el centro del giro. Esta fuerza es llamada fuerza centrípeta. Por ejemplo: Sosteniendo con una cuerda a un objeto pesado como una piedra, tu mano ejerce una fuerza para sostener la piedra elevada, esta fuerza es igual y opuesta al peso del avión. Si tu giras la piedra en círculos, tu mano esta ejerciendo no solo una fuerza vertical para contrarrestar el peso, sino también una fuerza centrípeta para mantener la piedra girando. La fuerza total ejercida a la cuerda es mayor que el peso de la piedra.</p>
+
+                    <h3>FACTOR CARGA</h3>
+                    <p>El factor carga es la relación entre la fuerza de sustentación producida por las alas comparada a la fuerza del peso del avión. Se mide en Gs (aceleración de la gravedad). El factor de carga en las alas incrementa en viraje. Volando recto y nivelado, el ala produce una fuerza de sustentacion igual al peso L = W. El factor carga seria de 1, tu experimentas una fuerza desde tu asiento igual al peso normal, es decir “1g”. En un viraje con banqueo de 60°, las alas van a producir la fuerza de sustentacion equivalente a el doble del peso (2g).</p>
+                    <p>A 30° de banqueo, la velocidad de pérdida incrementa un 7%. A 45° de banqueo, la velocidad de pérdida incrementa un 19%; A 60° de banqueo, la velocidad de pérdida incrementa un 41%; and A 75° de banqueo, la velocidad de pérdida incrementa un 100%, o el doble.</p>
+
+                    <h3>DESLIZAMIENTO Y DERRAPE (SLIP / SKID)</h3>
+                    <p>Ambos pueden ocurrir durante un viraje y se observan en el indicador de giro.</p>
+                    <p><strong>DESLIZAMIENTO (SLIP):</strong> Es cuando el avión cae hacia el lado interior del giro porque falta timón de dirección para coordinarlo.</p>
+                    <p><strong>DERRAPE (SKID):</strong> Es cuando el avión derrapa hacia afuera del giro porque el piloto esta usando demasiado timón de dirección en el sentido del giro.</p>
+
+                    <h3>RÉGIMEN DE VIRAJE</h3>
+                    <p>El régimen de viraje de un avíon (ROT - del inglés Rate Of Turn) es el número de grados por segundo del cambio de dirección que hace el avión. el regimen de viraje estándar es de 3 grados por segundo.</p>
+
+                    <h3>RADIO DE VIRAJE</h3>
+                    <p>El radio de viraje está directa a este relacionado con el régimen de viraje, que es una función del ángulo de inclinación y la velocidad. Si el ángulo de inclinación se mantiene constante y la velocidad se incrementa, el radio de giro incrementa. Una velocidad mas alta hace que el avión viaje a través de un arco mayor debido a una mayor velocidad. Para volar el mismo radio con un incremento de velocidad, requerimos mayor ángulo de banqueo.</p>
+
+                    <h3>ESTABILIDAD</h3>
+                    <p>Es la cualidad inherente de una aeronave para corregir las condiciones que puedan alterar su equilibrio, y regresar o continuar en la trayectoria de vuelo original. Es una característica del diseño de aeronaves. La reacción de un cuerpo cuando su equilibrio es alterado se conoce como estabilidad. Los dos tipos son estática y dinámica.</p>
+
+                    <h4>ESTABILIDAD ESTÁTICA</h4>
+                    <p>Se refiere a la tendencia inicial, o la dirección del movimiento, de vuelta al equilibrio. En la aviación, se refiere a la respuesta inicial de la aeronave cuando se cambia un ángulo de ataque determinado, deslizamiento, o inclinación. Se divide en 3 subtipos:</p>
                     <ul>
-                        <li><strong>Sustentación (Lift)</strong> = <strong>Peso (Weight)</strong></li>
-                        <li><strong>Empuje (Thrust)</strong> = <strong>Resistencia (Drag)</strong></li>
+                        <li><strong>ESTABILIDAD ESTÁTICA POSITIVA:</strong> Tendencia inicial de la aeronave a regresar al estado original de equilibrio después de ser perturbado.</li>
+                        <li><strong>ESTABILIDAD ESTÁTICA NEUTRA:</strong> Tendencia inicial de la aeronave a permanecer en una nueva condición después de haber sido perturbado su equilibrio.</li>
+                        <li><strong>ESTABILIDAD ESTÁTICA NEGATIVA:</strong> Tendencia inicial de la aeronave para continuar alejándose del estado original de equilibrio después de ser perturbado.</li>
                     </ul>
 
-                    <h3>5. Ángulo de Ataque (AOA) y Pérdida (Stall)</h3>
-                    <p>El <strong>Ángulo de Ataque</strong> es el ángulo entre la cuerda del ala y el viento relativo. Cuando excedes el ángulo crítico (aprox. 16-18° en la mayoría de aviones), el flujo se separa → <strong>stall</strong>.</p>
-                    <p><strong>Recuperación:</strong> Baja la nariz inmediatamente para reducir el AOA. No intentes mantener altitud con el timón de profundidad cerca de la velocidad de pérdida.</p>
-
-                    <h3>6. Resistencia (Drag)</h3>
+                    <h4>ESTABILIDAD DINÁMICA</h4>
+                    <p>Se refiere a la respuesta del avión en el tiempo cuando se les perturba de un ángulo de ataque dado, deslizamiento, o inclinación. Este tipo de estabilidad también tiene tres subtipos.</p>
                     <ul>
-                        <li><strong>Parásita:</strong> No genera sustentación (fricción, forma, interferencia).</li>
-                        <li><strong>Inducida:</strong> Es el "precio" de generar sustentación (vórtices en las puntas de ala).</li>
+                        <li><strong>ESTABILIDAD DINAMICA POSITIVA:</strong> En el tiempo, el movimiento de los objetos desplazados disminuye en amplitud y, debido a que es positivo, el objeto desplazados vuelve hacia el estado de equilibrio.</li>
+                        <li><strong>ESTABILIDAD DINÁMICA NEUTRA:</strong> Una vez desplazado, el objeto desplazado ni disminuye ni aumenta en amplitud.</li>
+                        <li><strong>ESTABILIDAD DINÁMICA NEGATIVA:</strong> En el tiempo, el movimiento de los objetos desplazados aumenta y se vuelve mas divergente.</li>
                     </ul>
-                    <p><strong>Efecto Suelo:</strong> Cerca del suelo se reduce la resistencia inducida → el avión "flota" más en el aterrizaje.</p>
+
+                    <h3>ESTABILIDAD LONGITUDINAL (CABECEO)</h3>
+                    <p>Es la cualidad que hace que un avión sea estable alrededor de su eje lateral. Involucra el movimiento de cabeceo cuando la nariz del avión se mueve hacia arriba y hacia abajo durante el vuelo. Un avión longitudinalmente inestable tiene una tendencia a descender o ascender progresivamente, por lo tanto un avión longitudinalmente inestable es difícil y a veces peligroso para volar.</p>
+                    <p>La estabilidad o instabilidad longitudinal en un avión depende de tres factores:</p>
+                    <ul>
+                        <li>Ubicación del ala con respecto al CG.</li>
+                        <li>Ubicación de las superficies horizontales de cola con respecto al CG.</li>
+                        <li>Área o tamaño de las superficies de cola.</li>
+                    </ul>
+
+                    <h4>TAILFORCE</h4>
+                    <p>Es la fuerza hacia abajo sobre el estabilizador horizontal a fin de equilibrar la aeronave y evitar que la nariz este continuamente hacia abajo. Esta fuerza es necesaria ya que la mayoría de los aviones están diseñados para que el centro de presiones del ala este por detrás del centro de gravedad, lo que causaría un movimiento de cabeceo hacia abajo.</p>
+
+                    <h3>ESTABILIDAD LATERAL (ALABEO)</h3>
+                    <p>La estabilidad en torno al eje longitudinal del avión. Esto ayuda a estabilizar el efecto lateral o "alabeo" cuando una de las alas baja más que el ala en el lado opuesto de la aeronave. Hay varios factores de diseño que hacen un avión lateralmente estable, los factores principales son la distribución del peso y el diedro. Es la habilidad natural del avión de recuperarse de una perturbación lateral (que es alabeo en el eje longitudinal) sin maniobra del piloto.</p>
+                    <p>Si una ráfaga de viento momentánea fuerza a una de las alas a subir y la otra a bajar, el avión alabea. Cuando el avión alabea sin girar, se produce una tendencia al deslizamiento lateral hacia el ala baja. Como las alas tienen diedro, el aire golpea el ala inferior en un AOA mucho mayor que el ala superior. El aumento de AOA en el ala inferior crea más sustentación que el ala superior. El aumento de la sustentación causa que el ala más baja comience a subir. Al acercarse el ala a la posición de nivel, el AOA en las dos alas, son iguales una vez más, con lo que la tendencia a alabear disminuye. El efecto del diedro es producir una tendencia de alabeo para retornar la aeronave a una condición de vuelo de equilibrio lateral cuando se produce un deslizamiento.</p>
+
+                    <h3>HIDROPLANEO</h3>
+                    <p>El hidroplaneo es una condición que puede ocurrir cuando un avión aterriza en una pista contaminada. El agua en la pista reduce la fricción entre las ruedas y el suelo, y puede reducir la eficacia de frenado. La capacidad de frenado se puede perder por completo cuando la rueda hace hidroplaneo o aquaplaning porque una capa de agua separa a las ruedas de la superficie de la pista. Esto también es cierto para la eficacia de frenado cuando las pistas están cubiertas de hielo.</p>
+
+                    <h4>HIDROPLANEO DINÁMICO</h4>
+                    <p>Cuando la pista está mojada, el piloto puede enfrentarse al hidroplaneo dinámico. El hidroplaneo dinámico es una condición en la que los neumáticos se apoyan en una fina capa de agua en lugar de la superficie de la pista. Debido a que las ruedas en hidroplaneo no tocan la pista, el frenado y control direccional son casi nulos. Para ayudar a minimizar el hidroplaneo dinámico, algunas pistas disponen de ranuras para ayudar a drenar el agua; la mayoría de las pistas no.</p>
+
+                    <h4>HIDROPLANEO DE CAUCHO REVERTIDO</h4>
+                    <p>Se produce durante una frenada brusca que provoca un derrape prolongado con las ruedas bloqueadas. Basta con una fina capa de agua sobre la pista para facilitar este tipo de aquaplaning. El derrape del neumático genera suficiente calor como para que el caucho en contacto con la pista vuelva a su estado original sin curar. El caucho revertido actúa como sello entre el neumático y la pista y retrasa la salida del agua de la zona de la huella. El agua se calienta y se convierte en vapor, lo que ayuda al neumático a salir de la pista. El hidroplaneo revertido con frecuencia sigue a un encuentro con hidroplaneo dinámico, durante el cual el piloto puede tener los frenos bloqueados en un intento de reducir la velocidad del avión.</p>
+
+                    <h4>HIDROPLANEO VISCOSO</h4>
+                    <p>El hidroplaneo viscoso se debe a las propiedades viscosas del agua. Basta con una fina película de fluido de no más de una milésima de pulgada de profundidad. El neumático no puede penetrar el fluido y rueda sobre la película. Esto puede ocurrir a una velocidad mucho menor que el aquaplaning dinámico, pero requiere una superficie lisa, como asfalto o una zona de aterrizaje cubierta con el caucho acumulado de aterrizajes anteriores.</p>
                 `,
                 doctrinalManual: "FAA-H-8083-25B – Pilot's Handbook of Aeronautical Knowledge",
                 doctrinalText: "La sustentación es el resultado combinado del Principio de Bernoulli y la Tercera Ley de Newton. El aire fluye más rápido sobre la superficie superior del ala creando menor presión, mientras el ala deflexiona el aire hacia abajo produciendo una reacción hacia arriba.",
@@ -411,16 +628,168 @@
                 ]
             },
             2: {
-                title: "Conocimientos generales del avión",
-                subtitle: "SISTEMAS Y COMPONENTES",
+                title: "Conocimientos Generales del Avión",
+                subtitle: "COMPONENTES, CONTROLES Y SISTEMAS",
                 indicator: "Módulo 2",
-                instructorText: `<p><strong>Añadir texto</strong><br>Contenido del Módulo 2 en desarrollo. Estructura del avión, controles primarios/secundarios, sistemas (motor, eléctrico, hidráulico, etc.).</p>`,
+                instructorText: `
+                    <h3>I. COMPONENTES DEL AVIÓN</h3>
+                    <h4>1. Fuselaje</h4>
+                    <p>El fuselaje es el cuerpo central de la aeronave. Su diseño tiene tres funciones principales: dar cabida a la tripulación, a los pasajeros y a la carga. Estructuralmente, actúa como el eje de unión donde se conectan las alas y el empenaje de cola.</p>
+                    <p>* Evolución Estructural: Los diseños más antiguos utilizaban estructuras reticulares o tubulares, construidas con madera, acero o aluminio. En la actualidad, los aviones modernos emplean estructuras de tipo monocasco y semimonocasco, las cuales suelen estar recubiertas de aluminio o aleaciones especiales.</p>
+
+                    <h4>2. Alas</h4>
+                    <p>Las alas son perfiles aerodinámicos diseñados específicamente para soportar las cargas de sustentación y la resistencia durante el vuelo.</p>
+                    <p>* Funciones Adicionales: Además de generar sustentación, pueden servir de soporte para dispositivos externos como los motores (en aviones multimotores) y los flaps.</p>
+                    <p>* Estructura Interna: Generalmente, cuentan con uno o más largueros (spars), que son las vigas principales encargadas de soportar las cargas estructurales mayores. Según su posición en el fuselaje, se clasifican en ala alta, ala media y ala baja.</p>
+
+                    <h4>3. Empenaje y Superficies de Control</h4>
+                    <p>El empenaje es la sección de cola, la cual incluye superficies fijas y móviles esenciales para el control:</p>
+                    <p>* Timón de Dirección (Rudder): Se une a la parte posterior de la deriva (estabilizador vertical). Su función es mover la nariz del avión hacia la izquierda o la derecha, controlando el movimiento de guiñada sobre el eje vertical.</p>
+                    <p>* Timón de Profundidad (Elevador): Se une a la parte posterior del estabilizador horizontal. Se utiliza para mover la nariz hacia arriba o hacia abajo, controlando el cabeceo sobre el eje lateral.</p>
+                    <p>* Compensadores (Trim Tabs): Son pequeñas aletas móviles situadas en el borde posterior de las superficies de control. Su propósito es reducir la presión que el piloto debe ejercer sobre los mandos desde la cabina. Pueden estar instalados en los alerones, el timón o el elevador.</p>
+
+                    <h4>4. Tren de Aterrizaje</h4>
+                    <p>Es el apoyo principal del avión cuando está en tierra (estacionado, en rodaje, despegando o aterrizando). Se compone de tres ruedas: dos principales y una tercera rueda que define la configuración:</p>
+                    <p>* Tren Triciclo: La tercera rueda está en la nariz.</p>
+                    <p>* Tren Convencional: La tercera rueda está en la parte trasera.</p>
+                    <p>Operativamente, el tren puede ser fijo (siempre extendido) o retráctil (se guarda en vuelo).</p>
+
+                    <h3>II. CONTROLES DE VUELO</h3>
+                    <p>Los sistemas de control operan mediante una colección de partes mecánicas, como barras, poleas y cadenas, que transmiten las fuerzas aplicadas por el piloto en la cabina hacia las superficies de vuelo.</p>
+                    
+                    <h4>1. Controles Primarios</h4>
+                    <p>* Alerones: Controlan el alabeo (inclinación lateral) alrededor del eje longitudinal. Funcionan en oposición: cuando el alerón derecho sube, el izquierdo baja y viceversa.</p>
+
+                    <h4>2. Controles Secundarios</h4>
+                    <p>Son dispositivos que modifican el rendimiento aerodinámico:</p>
+                    <p>* Flaps: Son los dispositivos hipersustentadores más comunes. Se ubican en el borde de salida del ala y aumentan tanto la sustentación como la resistencia inducida. Al incrementar la curvatura del perfil alar, elevan el coeficiente de sustentación (CL). Pueden ser accionados eléctrica o mecánicamente.</p>
+                    <p>  * Tipos: Simple, partido (o de intradós), ranurado, Fowler y Fowler ranurado.</p>
+                    <p>* Slats y Slots: Dispositivos de borde de ataque. Son extensiones que dirigen el aire a la superficie superior del ala para retrasar la separación del flujo en ángulos de ataque altos. Los slats son móviles y los slots son fijos.</p>
+
+                    <h3>III. GRUPO MOTOPROPULSOR</h3>
+                    <p>Este grupo produce el empuje necesario para la propulsión. Incluye el motor y la hélice.</p>
+                    <p>* Funciones del Motor: Además de hacer girar la hélice, genera energía eléctrica, proporciona vacío para instrumentos de vuelo y es fuente de calor para la cabina. El motor está cubierto por un carenado o capot para mejorar el flujo de aire y facilitar el enfriamiento de los cilindros.</p>
+
+                    <h4>1. Motor Alternativo (Recíproco)</h4>
+                    <p>Funciona bajo el principio de convertir energía química (combustible) en calorífica (combustión) y esta en energía mecánica. El diseño más común es el de cuatro tiempos con encendido por chispa.</p>
+                    <p>* Mecanismo de Válvulas: Las válvulas se mantienen cerradas por resortes. El árbol de levas (movido por el cigüeñal) acciona un botador, que empuja una varilla, la cual mueve un balancín para abrir la válvula.</p>
+                    <p>* Ciclo Otto (Cuatro Tiempos):</p>
+                    <ol>
+                        <li><strong>Admisión:</strong> El pistón baja, la válvula de admisión abre y entra la mezcla aire/combustible.</li>
+                        <li><strong>Compresión:</strong> La válvula cierra, el pistón sube y comprime la mezcla para ganar potencia.</li>
+                        <li><strong>Explosión (Potencia):</strong> La chispa enciende la mezcla; la presión obliga al pistón a bajar, girando el cigüeñal.</li>
+                        <li><strong>Escape:</strong> El pistón sube con la válvula de escape abierta para purgar los gases quemados.</li>
+                    </ol>
+
+                    <h4>2. Combustión Anormal</h4>
+                    <p>* Detonación: Ignición explosiva descontrolada. Causas: combustible de bajo octanaje, mezclas pobres con alta potencia o enfriamiento reducido.</p>
+                    <p>* Pre-ignición: La mezcla se enciende antes del evento normal debido a un punto caliente (como carbón o metal incandescente) en la cámara de combustión.</p>
+
+                    <h4>3. Hélice</h4>
+                    <p>Es un perfil aerodinámico rotatorio que produce empuje. Al girar, crea una zona de baja presión en su cara posterior y alta presión en la delantera (similar a un ala), tirando del avión hacia adelante.</p>
+                    <p>* Paso Fijo: El ángulo de la pala se configura al instalarse y no cambia; se sacrifica eficiencia para cubrir todas las fases del vuelo.</p>
+                    <p>* Paso Variable: Permite ajustar el ángulo de las palas para optimizar potencia y velocidad.</p>
+
+                    <h3>IV. SISTEMAS DE INDUCCIÓN</h3>
+                    <p>Su función es introducir aire del exterior, mezclarlo con combustible y llevarlo a los cilindros. Existen dos tipos principales:</p>
+                    
+                    <h4>1. Sistema de Carburador (Tipo Flotador)</h4>
+                    <p>Mezcla el combustible y aire antes de entrar al múltiple de admisión.</p>
+                    <p>* Operación: El aire pasa por un filtro y entra a un tubo Venturi (garganta estrecha). La aceleración del aire crea baja presión, succionando combustible del surtidor principal.</p>
+                    <p>* Sistema de Ralentí: Cuando la mariposa está cerrada, un pulverizador auxiliar suministra combustible porque el Venturi deja de tener succión suficiente.</p>
+                    <p>* Bomba Aceleradora: Evita el debilitamiento de la mezcla en aceleraciones bruscas (como en despegues) enviando combustible extra a presión.</p>
+                    <p>* Calefacción (Carb Heat): El aire exterior pasa por una cubierta alrededor del silenciador (muffler). Al activarse, este aire caliente entra al carburador para prevenir o derretir hielo. Su uso causa una caída en las RPM por el aire menos denso.</p>
+
+                    <h4>2. Sistema de Inyección de Combustible</h4>
+                    <p>Inyecta el combustible directamente en los cilindros o justo antes de la válvula de admisión.</p>
+                    <p>* Componentes y Proceso:</p>
+                    <ol>
+                        <li><strong>Bomba Auxiliar (Boost):</strong> Proporciona presión para el arranque o emergencias.</li>
+                        <li><strong>Bomba de Motor:</strong> Suministra combustible a presión durante la operación normal.</li>
+                        <li><strong>Unidad de Control:</strong> Reemplaza al carburador; mide el combustible según el ajuste de mezcla y el acelerador.</li>
+                        <li><strong>Válvula Distribuidora:</strong> Reparte el combustible medido hacia las boquillas individuales.</li>
+                        <li><strong>Boquillas de Descarga:</strong> Situadas en la cabeza de cada cilindro, inyectan la mezcla directamente.</li>
+                    </ol>
+
+                    <h3>I. Sistema de Aceite</h3>
+                    <p>El sistema de aceite es vital para la salud del motor y cumple cinco funciones críticas: lubrica las piezas móviles para evitar el desgaste, enfría el motor al reducir la fricción interna, extrae el calor generado en los cilindros, proporciona un sello hermético entre las paredes de los cilindros y los pistones, y remueve los contaminantes del sistema. Existen dos configuraciones principales de almacenamiento: el cárter húmedo (wet sump), donde el aceite se guarda en un depósito que forma parte integral del motor, y el cárter seco (dry sump), donde el aceite se almacena en un tanque separado y es movido por bombas.</p>
+                    <p>Respecto a las propiedades del fluido, el aceite debe tener la viscosidad adecuada para el rango de temperatura operativa del motor. Un aceite muy viscoso fluye con lentitud, mientras que uno menos viscoso fluye con mayor facilidad, por lo que debe mantenerse estable para cumplir sus funciones protectoras.</p>
+
+                    <h3>II. Sistema de Refrigeración</h3>
+                    <p>La combustión dentro de los cilindros genera un calor intenso que debe ser disipado para evitar el sobrecalentamiento, lo que podría causar pérdida de potencia, alto consumo de aceite, detonación y daños estructurales graves. La mayoría de las aeronaves pequeñas utilizan refrigeración por aire, aunque existen modelos refrigerados por líquido. En el sistema por aire, el flujo entra por aberturas detrás del cubo de la hélice y es dirigido por tabiques (baffles) hacia los cilindros, los cuales cuentan con aletas diseñadas para aumentar la superficie de contacto con el aire y mejorar la transferencia de calor.</p>
+
+                    <h3>III. Sistema de Escape</h3>
+                    <p>Este sistema tiene tres tareas principales: expulsar los gases quemados, suministrar calor a la cabina y descongelar el parabrisas. El componente central es el silenciador (muffler), una pieza cilíndrica que contiene los gases de combustión. Para calentar la cabina, el aire exterior (aire libre no filtrado) pasa por una cubierta que rodea al silenciador caliente sin mezclarse con los gases tóxicos y luego se conduce al interior. Es imperativo que el sistema esté libre de grietas, ya que los gases de escape contienen monóxido de carbono, el cual es incoloro, inodoro y mortal.</p>
+
+                    <h3>IV. Sistema de Arranque</h3>
+                    <p>La mayoría de los aviones pequeños emplean un sistema de arranque eléctrico directo. Este circuito está compuesto por una fuente de energía (la batería de a bordo), cableado, interruptores y un relé que activa el motor de arranque. El proceso comienza cuando el motor de arranque hace girar el cigüeñal para iniciar el ciclo de combustión.</p>
+
+                    <h3>V. Sistema de Encendido</h3>
+                    <p>En los motores de encendido por chispa, este sistema genera la ignición necesaria para la mezcla aire/combustible mediante magnetos, bujías, arneses y un interruptor de encendido. Un magneto es un generador de corriente que utiliza un imán permanente y opera de forma totalmente independiente del sistema eléctrico del avión. Genera el alto voltaje necesario para producir la chispa en las bujías siempre que el cigüeñal esté girando.</p>
+                    <p>Casi todas las aeronaves certificadas utilizan un sistema de encendido doble, con dos magnetos independientes y dos bujías por cilindro para mayor seguridad y confiabilidad. El interruptor de cabina permite seleccionar cinco posiciones: OFF, R (Derecho), L (Izquierdo), BOTH (Ambos) y START (Arranque).</p>
+
+                    <h3>VI. Sistema de Combustible</h3>
+                    <p>Su función es garantizar un flujo constante de combustible desde los depósitos al motor. Se clasifican en dos tipos según su funcionamiento:</p>
+                    <p>* Sistema de Alimentación por Gravedad: Utilizado en aviones de ala alta, donde los tanques situados en las alas están por encima del motor, permitiendo que el combustible caiga naturalmente hacia el carburador.</p>
+                    <p>* Sistema de Bombeo: Dispone de una bomba mecánica movida por el motor y una bomba eléctrica auxiliar (boost pump) para el arranque o emergencias, brindando mayor fiabilidad al sistema.</p>
+                    <p>El sistema incluye tanques ventilados para mantener la presión atmosférica, sumideros o drenajes para inspeccionar la calidad del combustible, filtros y una válvula selectora con posiciones como IZQUIERDA, DERECHA, AMBOS y CERRADA. Además, cuenta con un cebador (primer), una bomba manual que inyecta combustible vaporizado directamente en los cilindros para facilitar el arranque en climas fríos. El combustible utilizado es el AVGAS, clasificado por su número de octano o resistencia a la detonación, siendo el 100LL (Low Lead) de color azul el más común.</p>
+
+                    <h3>VII. Sistema Eléctrico</h3>
+                    <p>Un sistema básico incluye el alternador (o generador), la batería, interruptores, regulador de voltaje y amperímetro. El alternador, movido por el motor, suministra corriente a los equipos y mantiene cargada la batería. La batería sirve para el arranque y como fuente limitada de emergencia. La barra de bus centraliza la distribución de energía a todos los circuitos, los cuales están protegidos por fusibles o interruptores térmicos (circuit breakers) contra sobrecargas. El amperímetro permite al piloto monitorear si el alternador genera energía y si la batería se está cargando.</p>
+
+                    <h3>VIII. Sistema Hidráulico</h3>
+                    <p>En aeronaves pequeñas, su uso principal es el accionamiento de los frenos de las ruedas. El sistema utiliza presión de fluido para apretar las pastillas contra un disco giratorio que se mueve con la rueda; la fricción resultante detiene el giro.</p>
+
+                    <h3>IX. Sistema de Vacío</h3>
+                    <p>Es el encargado de proporcionar energía a ciertos instrumentos giroscópicos (rumbo y actitud). Una bomba de vacío accionada por el motor aspira aire, lo filtra y lo hace pasar a alta velocidad por los álabes de los rotores de los instrumentos para hacerlos girar. El sistema incluye una válvula de alivio para regular la succión.</p>
+
+                    <h3>X. Instrumentos de Vuelo</h3>
+                    <p>Se dividen en tres grupos tecnológicos fundamentales:</p>
+                    
+                    <h4>1. Sistema Pitot-Estática</h4>
+                    <p>Utiliza las presiones del aire para operar. El tubo Pitot capta la presión de impacto y alimenta únicamente al velocímetro (ASI). La toma estática mide la presión ambiental y es necesaria para el ASI, el VSI (indicador de velocidad vertical) y el altímetro.</p>
+                    <p>* Bloqueos: Si el pitot se bloquea, el velocímetro falla. Si la toma estática se obstruye, el altímetro se congela y el VSI marca cero continuamente.</p>
+                    <p>* Velocímetro (ASI): Posee marcas de color críticas como el arco amarillo (precaución) y la línea roja (Vne) (velocidad de nunca exceder).</p>
+
+                    <h4>2. Instrumentos Giroscópicos</h4>
+                    <p>Funcionan bajo los principios de rigidez en el espacio (el giróscopo mantiene su posición fija mientras gira) y precesión (reacción a una fuerza 90° después en el sentido de rotación).</p>
+                    <p>* Indicador de Rumbo: Instrumento mecánico que muestra 360° de azimut para facilitar la navegación.</p>
+                    <p>* Indicador de Actitud (Horizonte Artificial): Muestra la relación de la aeronave con el horizonte.</p>
+                    <p>* Inclinómetro: Parte del coordinador de giros, usa una bola para representar la guiñada; se debe "pisar la bola" con el pedal del timón para lograr un viraje coordinado.</p>
+
+                    <h4>3. Compás Magnético</h4>
+                    <p>Es el instrumento básico de dirección y se basa en el campo magnético terrestre. Consiste en dos imanes unidos a un flotador sumergido en un líquido similar al querosén, con una carta graduada que marca los puntos cardinales y rumbos cada 30°. Sufre errores como la variación (diferencia entre el norte verdadero y magnético), desviación (interferencia por la electrónica del avión), error por inclinación y error por oscilación debido a turbulencia.</p>
+                `,
                 doctrinalManual: "FAA-H-8083-25B (PHAK)",
-                doctrinalText: "Añadir texto",
+                doctrinalText: "",
                 doctrinalNotes: [],
-                warningText: "Añadir texto",
+                warningText: "",
                 flashcards: [
-                    { q: "Añadir pregunta", a: "Añadir respuesta" }
+                    // Fáciles
+                    { q: "¿Qué es el fuselaje?", a: "Es el cuerpo central del avión que alberga tripulación, pasajeros y carga, y une estructuralmente las alas y el empenaje." },
+                    { q: "¿Qué tipos de estructura de fuselaje se usan en aviones modernos?", a: "Monocasco y semimonocasco." },
+                    { q: "¿Qué son los largueros de las alas?", a: "Son las vigas principales que soportan las cargas estructurales mayores del ala." },
+                    { q: "¿Qué controla el timón de dirección (Rudder)?", a: "Controla la guiñada (movimiento de la nariz hacia izquierda o derecha) sobre el eje vertical." },
+                    { q: "¿Qué son los compensadores (Trim Tabs)?", a: "Pequeñas aletas móviles que reducen la presión que el piloto debe ejercer sobre los mandos." },
+
+                    // Medias
+                    { q: "¿Cuál es la diferencia entre tren triciclo y tren convencional?", a: "En el triciclo la tercera rueda está en la nariz; en el convencional está en la parte trasera." },
+                    { q: "¿Qué función principal tienen los flaps?", a: "Aumentan la sustentación y la resistencia al incrementar la curvatura del perfil alar." },
+                    { q: "¿Qué diferencia hay entre slats y slots?", a: "Los slats son móviles y los slots son fijos. Ambos son dispositivos de borde de ataque." },
+                    { q: "¿Cuáles son las cuatro fases del ciclo Otto?", a: "Admisión, Compresión, Explosión (Potencia) y Escape." },
+                    { q: "¿Qué es la detonación en un motor alternativo?", a: "Es una ignición explosiva descontrolada de la mezcla, causada generalmente por bajo octanaje o sobrecalentamiento." },
+
+                    // Difíciles / Técnicas
+                    { q: "¿Qué produce el efecto Magnus en un perfil aerodinámico?", a: "La diferencia de velocidad del aire entre la parte superior e inferior del ala genera una zona de baja presión arriba y alta presión abajo." },
+                    { q: "¿Por qué el uso de Carb Heat produce una caída en las RPM?", a: "Porque el aire caliente es menos denso, lo que reduce la masa de aire que entra al motor." },
+                    { q: "¿Qué función tiene la bomba aceleradora en el carburador?", a: "Envía combustible extra a presión durante aceleraciones bruscas para evitar que la mezcla se empobrezca." },
+                    { q: "¿Por qué se usa un sistema de encendido doble (dos magnetos)?", a: "Para mayor seguridad y confiabilidad; si un magneto falla, el motor sigue funcionando con el otro." },
+                    { q: "¿Qué diferencia hay entre un sistema de combustible por gravedad y uno por bombeo?", a: "El de gravedad se usa en aviones de ala alta y el combustible cae por su peso. El de bombeo usa bombas mecánicas y eléctricas." },
+                    { q: "¿Qué es el AVGAS 100LL y de qué color es?", a: "Es el combustible de aviación de 100 octanos con bajo contenido de plomo. Es de color azul." },
+                    { q: "¿Qué instrumentos son alimentados por el sistema Pitot-Estática?", a: "El velocímetro (ASI), el altímetro y el indicador de velocidad vertical (VSI)." },
+                    { q: "¿Qué ocurre si se bloquea la toma estática?", a: "El altímetro se congela y el VSI marca cero de forma continua." },
+                    { q: "¿Qué función tiene el alternador en el sistema eléctrico?", a: "Suministra corriente a los equipos durante el vuelo y mantiene cargada la batería." },
+                    { q: "¿Qué es la precesión en un giroscopio?", a: "Es la reacción de un rotor que gira cuando se le aplica una fuerza; la fuerza resultante actúa 90° por delante en el sentido de rotación." }
                 ]
             },
             3: {
